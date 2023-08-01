@@ -1,0 +1,231 @@
+.Dashboardmaincard {
+    /* border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    border-radius: 0px !important;
+    background-image: url('../Images/abt-bg.png') !important; */
+    border: none !important;
+    border-radius: 4px !important;
+    backdrop-filter: blur(3px) !important;
+    box-shadow: 0 0 10px rgba(207, 207, 248, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.689) !important;
+}
+
+.apexcharts-toolbar {
+    z-index: 0 !important;
+}
+
+.COUNT {
+    margin-top: 15px;
+}
+
+.HOVERCOUNT:hover .COUNT {
+    color: #008FFB !important;
+}
+
+.hovercount2:hover .COUNT {
+    color: #008FFB !important;
+}
+
+.hovercount3:hover .COUNT {
+    color: #008FFB !important;
+}
+
+.hovercount4:hover .COUNT {
+    color: #008FFB !important;
+}
+
+.DetailCard {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    border-radius: 0px !important;
+    font-family: sans-serif;
+}
+
+.REquesthead {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgb(2, 75, 120) !important;
+}
+
+.RequestIcons {
+    font-size: 12px !important;
+    color: rgb(31, 134, 212);
+    border: none;
+    border-radius: 3px;
+    padding: 2px 10px 2px 10px;
+
+}
+
+.CREATEINDENT {
+    background-color: #c02222 !important;
+    color: rgba(255, 255, 255, 0.912) !important;
+    border-radius: 2px !important;
+    padding: 1px 10px 1px 10px !important;
+    text-decoration: none !important;
+    font-size: 13px;
+}
+
+.CREATEINDENT:hover {
+    background-color: rgb(2, 75, 120) !important;
+}
+
+.CreateIndentIcon {
+    font-size: 20px !important;
+    margin-top: -2px;
+}
+
+.grownumber1 {
+    font-size: 13px;
+    background-color: rgba(75, 177, 255, 0.23);
+    padding: 3px;
+    border-radius: 4px;
+}
+.grownumber2 {
+    font-size: 13px;
+    background-color: rgba(255, 205, 7, 0.181);
+    padding: 3px;
+    border-radius: 4px;
+}
+.grownumber3 {
+    font-size: 13px;
+    background-color: rgba(53, 157, 1, 0.125);
+    padding: 3px;
+    border-radius: 4px;
+}
+.grownumber4 {
+    font-size: 13px;
+    background-color: rgba(255, 0, 0, 0.162);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.ArrowUpwardIcon {
+    font-size: 20px !important;
+    margin-top: -5px;
+}
+
+.Undertext {
+    font-size: 12px;
+    color: rgb(2, 75, 120) !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.EditNoteIcon {
+    margin-top: -3px;
+}
+
+.TREAQUESTBARCHART {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    border-radius: 0px !important;
+}
+
+.DraftQuery {
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+}
+
+.draftheader {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(2, 75, 120) !important;
+}
+
+.SaveAsIcon {
+    margin-top: -3px;
+}
+
+.TOTALDindentqury {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(121, 121, 121);
+}
+
+.TOTALDindentqury b {
+    color: rgb(2, 75, 120);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.RECENTACTIVITY {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(2, 75, 120) !important;
+
+}
+
+.AccessTimeIconRecent {
+    font-size: 20px !important;
+    margin-top: -2px;
+}
+.DRAFTQUERYMOREINFORBTN{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(206, 206, 206);
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 6px;
+    padding: 2px 10px 2px 10px;
+    color: #0069ba;
+    text-decoration: none !important;
+}
+/* .chart-container {
+    height: 196px !important;
+    min-height: 180px !important;
+  }
+.chart-container Chart{
+    height: 196px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+} */
+.heightfix{
+    height: 39.5vh !important;
+    min-height: 30vh !important;
+    /* max-height: 40vh !important; */
+}
+/* timeline */
+.BOXSHDOW {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: 15px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 385px;
+    border-radius: 4px;
+}
+
+.timeline {
+    border-left: 1px solid rgb(40, 170, 246);
+    position: relative;
+    list-style: none;
+}
+
+.timeline .timeline-item {
+    position: relative;
+}
+
+.timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .timeline-item:after {
+    background-color: hsl(211, 81%, 56%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+}
+.TIMELINEDATE{
+    font-size: 13px;
+}
+.TIMELINEREQUESTNO{
+    font-size: 13px;
+    color: #008FFB !important;
+}

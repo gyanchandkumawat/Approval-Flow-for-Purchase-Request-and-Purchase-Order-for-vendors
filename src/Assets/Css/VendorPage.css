@@ -1,0 +1,18 @@
+.backgroundVendor {
+    background-image: url('../Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+.VENDORCARD{
+    background: none;
+  }
+.VendorMainCardbody{
+    margin-top: 10px;
+    background-color: rgba(190, 223, 252, 0.563);
+    border-radius: 0px;
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+ 

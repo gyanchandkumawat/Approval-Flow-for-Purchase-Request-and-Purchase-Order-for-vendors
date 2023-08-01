@@ -1,0 +1,90 @@
+.ADDVENDORBTN {
+    margin-top: 34px !important;
+    border: none !important;
+    padding: 7px 10px 8px 10px !important;
+    border-radius: 3px !important;
+    background-color: rgba(2, 39, 111, 0.841);
+    color: aliceblue;
+    font-size: 13px;
+}
+
+.VENDORNICON {
+    margin-top: -4px;
+}
+
+.VENDORSELECTIONGROUP {
+    padding: 10px;
+    border-radius: 3px !important;
+    backdrop-filter: blur(3px) !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    background-color: rgba(0, 86, 171, 0.127) !important;
+}
+
+.VENDORTABLE {
+    font-size: 13px !important;
+    /* height: 40vh; */
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.VTHEAD {
+    top: 0 !important;
+    position: sticky;
+    /* z-index: 1 !important; */
+    background-color: aliceblue;
+}
+.VREMARKS{
+    background-color: rgba(255, 162, 0, 0.375) ;
+}
+.Vendorform{
+    background-color: rgba(255, 128, 0, 0.508) ;
+}
+.FinalizeBTN{
+    font-size: 13px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(98, 158, 255, 0.404);
+}
+.VSUBMITBTN{
+    font-size: 13px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(158, 255, 185, 0.501);
+}
+.VendorInputRFQ{
+    border-radius: 3px !important;
+    padding: 1px 7px 1px 7px !important;
+    font-size: 12px !important;
+    color: rgb(2, 10, 28) !important;
+    border: none !important;
+    width: 100%;
+    backdrop-filter: blur(3px) !important;
+}
+.VendorInputRFQ:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.VendorSelectRFQ{
+    border-radius: 3px !important;
+    padding: 1px 30px 1px 7px !important;
+    font-size: 12px !important;
+    color: rgb(2, 10, 28) !important;
+    border: none !important;
+    width: 100%;
+    backdrop-filter: blur(3px) !important;
+}
+.VendorSelectRFQ:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.CREATERFQFORMBTN{
+    font-size: 13px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(310deg, rgb(13, 131, 0), rgb(13, 131, 0));
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    padding: 3px 10px 5px 10px; 
+}

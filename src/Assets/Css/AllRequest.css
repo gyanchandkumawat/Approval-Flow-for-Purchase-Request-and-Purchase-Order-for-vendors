@@ -1,0 +1,84 @@
+.TRMCARD1{
+    border: none !important;
+    border-radius: 4px !important;
+    backdrop-filter: blur(3px) !important;
+    box-shadow: 0 0 10px rgba(207, 207, 248, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.689) !important;
+}
+.TRMCARDBODY2 {
+    border-radius: 3px !important;
+}
+.TRCARD1CARDTITLE {
+    color: rgb(8, 34, 96);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 0px;
+}
+.TRCARD1CARDTITLEICON {
+    margin-top: -4px;
+    color: rgb(8, 34, 96);
+}
+
+.DATERANGEINPUT{
+    border-radius: 0px 3px 3px 0px !important;
+    padding: 4px 7px 4px 7px !important;
+    font-size: 12px !important;
+    color: rgb(2, 10, 28) !important;
+    border: none !important;
+    backdrop-filter: blur(3px) !important;
+    background-color: #1a81e847 !important;
+}
+.DATERANGEINPUT:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.DATERANGELable{
+    border-radius: 3px 0px 0px 3px  !important;
+    padding: 4px 7px 4px 7px !important;
+    font-size: 12px !important;
+    color: rgb(2, 10, 28) !important;
+    border: none !important;
+    backdrop-filter: blur(3px) !important;
+    background-color: #1a81e847 !important;
+}
+.DATERANGELable:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.ALLREQSELECTFILTER{
+    border-radius: 3px 0px 0px 3px  !important;
+    padding: 2px 33px 4px 7px !important;
+    font-size: 12px !important;
+    color: rgb(2, 10, 28) !important;
+    border: none !important;
+    backdrop-filter: blur(3px) !important;
+    background-color: #1a81e847 !important; 
+}
+.ALLREQSELECTFILTER:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.css-tebbqi-MuiDataGrid-root{
+    background-color: rgba(255, 255, 255, 0.83);
+ }
+ .G20DATAGRIDDATATABLE{
+     box-shadow: 1px 4px 6px 2px rgba(12, 12, 12, 0.223) !important;
+     border: none !important;
+     font-size: 12px !important; 
+     background-color: rgb(255 255 255 / 67%) !important;
+     -webkit-backdrop-filter: saturate(200%) blur(6px);
+     backdrop-filter: saturate(200%) blur(1px);
+ }
+ .css-2gwvs0-MuiDataGrid-root .css-yrdy0g-MuiDataGrid-columnHeaderRow {
+    color: #838485 !important;
+    font-size: 12px !important;
+ }
+.css-pdct74-MuiTablePagination-selectLabel{
+    margin-top: 13px !important;
+ }
+.css-levciy-MuiTablePagination-displayedRows{
+    margin-top: 13px !important;
+ }

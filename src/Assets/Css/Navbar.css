@@ -1,0 +1,64 @@
+.Navbar-main{
+    /* margin: 7px 10px 7px 10px; */
+    /* border-radius: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 1 !important;
+    /* background-color: rgb(255 255 255 / 67%) !important;*/
+    -webkit-backdrop-filter: saturate(200%) blur(6px); 
+    backdrop-filter: saturate(200%) blur(6px); 
+}
+.Navbar-main-scroll{
+    /* margin: 7px 10px 10px 10px; */
+    /* border-radius: 10px; */
+    background-color: rgb(228, 245, 255) !important;
+    /* -webkit-backdrop-filter: saturate(200%) blur(6px); */
+    /* backdrop-filter: saturate(200%) blur(6px); */
+    position: sticky !important;
+    box-shadow: 1px 4px 7px 1px rgba(0, 0, 0, 0.074);
+    top: 0px !important;
+    z-index: 1 !important;
+    scroll-behavior: smooth;
+    /* overflow: auto; */
+    
+}
+.NAV_LINK{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-left: 10px !important;
+    margin-top: 3px;
+}
+.NAVACTIVECLASS .active {
+    background-color: rgba(1, 175, 255, 0.294) !important; 
+    border-radius: 3px;
+    padding: 3px 10px 5px 10px;
+    margin-top: 7px;
+    color: rgb(56, 50, 50) !important;
+    transition: background-color 0.5s ease !important;
+}
+
+.ECOMSIGNOUTDROPDOWN{
+    left: auto !important;
+    right: 16px !important;
+    background-color:rgb(28, 142, 195)  !important;
+    border: none !important;
+    color: rgb(193, 224, 255) !important;
+}
+.DROPDWNLINKSECOM{
+    font-size: 13px !important;
+}
+
+.NAVSELECTFIILTER{
+    font-size: 12px !important;
+    padding: 4px 32px 4px 10px !important;
+    margin-top: 8px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+.NAVSELECTFIILTER:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+    border: none !important;
+    outline: none !important;
+}
