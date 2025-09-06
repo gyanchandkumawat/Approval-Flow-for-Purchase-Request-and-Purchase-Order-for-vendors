@@ -333,45 +333,46 @@ export default function CreateIndent() {
                 });
                 //   alert(`File "${fileName}" already exists.`);
             }
-            const fileSizeInMB = file.size / (1024 * 1024);
-            if (fileSizeInMB > 3) {
-                iziToast.error({
-                    class: "IZITOAST",
-                    message: `File "${fileName}" exceeds the maximum allowed size of 3MB.`,
-                    messageColor: "red",
-                    messageSize: "6px",
-                    messageLineHeight: "",
-                    position: 'topRight',
-                    theme: 'light',
-                    backgroundColor: 'white',
-                    icon: "fa-regular fa-circle-xmark",
-                    iconColor: "red",
-                    progressBarColor: 'red',
-                });
-                return;
-            }
-            const allowedFileTypes = [".pdf", ".jpeg", ".jpg", ".png"];
-            const fileExtension = getFileExtension(fileName);
-            if (!allowedFileTypes.includes(fileExtension.toLowerCase())) {
-              iziToast.error({
-                class: "IZITOAST",
-                message: `File type not supported. Please upload a PDF or an image file.`,
-                messageColor: "red",
-                messageSize: "6px",
-                messageLineHeight: "",
-                position: "topRight",
-                theme: "light", // dark
-                backgroundColor: "white",
-                icon: "fa-regular fa-circle-xmark",
-                iconColor: "red",
-                progressBarColor: "red",
-              });
-              return;
-            }
+            // const fileSizeInMB = file.size / (1024 * 1024);
+            // if (fileSizeInMB > 3) {
+            //     iziToast.error({
+            //         class: "IZITOAST",
+            //         message: `File "${fileName}" exceeds the maximum allowed size of 3MB.`,
+            //         messageColor: "red",
+            //         messageSize: "6px",
+            //         messageLineHeight: "",
+            //         position: 'topRight',
+            //         theme: 'light',
+            //         backgroundColor: 'white',
+            //         icon: "fa-regular fa-circle-xmark",
+            //         iconColor: "red",
+            //         progressBarColor: 'red',
+            //     });
+            //     return;
+            // }
+            // const allowedFileTypes = [".pdf", ".jpeg", ".jpg", ".png"];
+            // const fileExtension = getFileExtension(fileName);
+            // if (!allowedFileTypes.includes(fileExtension.toLowerCase())) {
+            //   iziToast.error({
+            //     class: "IZITOAST",
+            //     message: `File type not supported. Please upload a PDF or an image file.`,
+            //     messageColor: "red",
+            //     messageSize: "6px",
+            //     messageLineHeight: "",
+            //     position: "topRight",
+            //     theme: "light", // dark
+            //     backgroundColor: "white",
+            //     icon: "fa-regular fa-circle-xmark",
+            //     iconColor: "red",
+            //     progressBarColor: "red",
+            //   });
+            //   return;
+            // }
             else {
+                debugger
                 const newFile = {
                     name: fileName,
-                    type: selectedType.value,
+                    type: selectedType,
                     file: file,
                     uploadedOn: new Date().toISOString()
                 };
@@ -414,8 +415,9 @@ export default function CreateIndent() {
         // // setSelectedFile(null);
     };
 
-    const handleTypeSelect = (selectedOption) => {
-        setSelectedType(selectedOption);
+    const handleTypeSelect = (e) => {
+        const selectedTypeValue = e.target.value;
+        setSelectedType(selectedTypeValue);
         setFileInputDisabled(false);
     };
     //!uplload file
@@ -557,9 +559,8 @@ export default function CreateIndent() {
                                                 <label htmlFor="Type" className="col-form-label G20ADDFOEMLABEL">Nature of indent</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example">
                                                     <option selected>Select</option>
-                                                    <option value="Natureofindent 1">Natureofindent 1</option>
-                                                    <option value="Natureofindent 2">Natureofindent 2</option>
-                                                    <option value="Natureofindent 3">Natureofindent 3</option>
+                                                    <option value="Service">Service</option>
+                                                    <option value="Material">Material</option>
                                                 </select>                                            
                                                 </div>
                                             {/* <div className="col-md-2 d-none">
@@ -597,14 +598,14 @@ export default function CreateIndent() {
                                                 <label htmlFor="Function" className="col-form-label G20ADDFOEMLABEL">Function</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id="Function">
                                                     <option selected>Select</option>
-                                                    <option value="Function 1">Function 1</option>
-                                                    <option value="Function 2">Function 2</option>
-                                                    <option value="Function 3">Function 3</option>
+                                                    <option value="HR">HR</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="SLP">SLP</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="ShipToOrg" className="col-form-label G20ADDFOEMLABEL">Ship To Org</label>
-                                                <input type="text" autoComplete="off" id="ShipToOrg" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" />
+                                                <input type="text" autoComplete="off" id="ShipToOrg" className="form-control G20ADDFOEMINPUTS1" aria-describedby=""/>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="BillTo" className="col-form-label G20ADDFOEMLABEL">Bill To</label>
@@ -614,9 +615,9 @@ export default function CreateIndent() {
                                                 <label htmlFor="Currency" className="col-form-label G20ADDFOEMLABEL">Currency</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id="Currency">
                                                     <option selected>Select</option>
-                                                    <option value="Currency 1">Currency 1</option>
-                                                    <option value="Currency 2">Currency 2</option>
-                                                    <option value="Currency 3">Currency 3</option>
+                                                    <option value="INR">INR</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="EUR">EUR</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
@@ -713,22 +714,19 @@ export default function CreateIndent() {
                                                 <label htmlFor="Destination" className="col-form-label G20ADDFOEMLABEL">Destination type <span className='text-danger'>*</span></label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Destination' required>
                                                     <option selected value="">Select</option>
-                                                    <option value="Destination type 1">Destination type 1</option>
-                                                    <option value="Destination type 2">Destination type 2</option>
-                                                    <option value="Destination type 3">Destination type 3</option>
+                                                    <option value="Inventory">Inventory</option>
+                                                    <option value="Corporate Office">Corporate Office</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Requester" className="col-form-label G20ADDFOEMLABEL">Requester <span className='text-danger'>*</span></label>
-                                                <input type="text" autoComplete="off" id="Requester" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" required />
+                                                <input type="text" autoComplete="off" id="Requester" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="sanjay.kumar" disabled/>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Organization" className="col-form-label G20ADDFOEMLABEL">Organization <span className='text-danger'>*</span></label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Organization' required>
-                                                    <option selected value="">Select</option>
-                                                    <option value="Organization type 1">Organization type 1</option>
-                                                    <option value="Organization type 2">Organization type 2</option>
-                                                    <option value="Organization type 3">Organization type 3</option>
+                                                    <option value="">Select</option>
+                                                    <option value="BPAAS" selected>BPAAS</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
@@ -736,9 +734,8 @@ export default function CreateIndent() {
                                                 </label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Organization'>
                                                     <option selected >Select</option>
-                                                    <option value="Location 1">Location 1</option>
-                                                    <option value="Location 2">Location 2</option>
-                                                    <option value="Location 3">Location 3</option>
+                                                    <option value="DEH">DEH</option>
+                                                    <option value="INH">INH</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
@@ -907,32 +904,6 @@ export default function CreateIndent() {
                                     </div>
                                 </div>
                             </div>
-                            {/* Merge Indent */}
-                            {/* <div className="row mt-2 d-none">
-                                <div className="card AddINSUBCARD">
-                                    <div className="card-body p-1">
-                                        <h6 className="card-title ADDINVOICECARDTITLE">Merge Indent</h6>
-                                        <hr className='mt-0 mb-1' />
-                                        <div className="row mb-2">
-                                            <div className="col-md-3">
-                                                <label htmlFor="Destination" className="col-form-label G20ADDFOEMLABEL">Select Indent No.</label>
-                                                <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Destination' >
-                                                    <option selected value="">Select</option>
-                                                    <option value="Indent-00000000001">Indent-00000000001</option>
-                                                    <option value="Indent-00000000002">Indent-00000000002</option>
-                                                    <option value="Indent-00000000003">Indent-00000000003</option>
-                                                    <option value="Indent-00000000004">Indent-00000000004</option>
-                                                    <option value="Indent-00000000005">Indent-00000000005</option>
-                                                    <option value="Indent-00000000006">Indent-00000000006</option>
-                                                    <option value="Indent-00000000007">Indent-00000000007</option>
-                                                    <option value="Indent-00000000008">Indent-00000000008</option>
-                                                    <option value="Indent-00000000009">Indent-00000000009</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
 
                             <div className="row mt-2">
                                 <div className="card AddINSUBCARD">
@@ -967,39 +938,39 @@ export default function CreateIndent() {
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
                                                     id="Type" name="Type" value={Type} onChange={(event) => setType(event.target.value)} autoComplete='off'>
                                                     <option selected>Select</option>
-                                                    <option value="Type 1">Type 1</option>
-                                                    <option value="Type 2">Type 2</option>
-                                                    <option value="Type 3">Type 3</option>
+                                                    <option value="Goods">Goods</option>
                                                 </select>
                                             </div>
                                             <div className="col">
                                                 <label htmlFor="ItemDesc" className="col-form-label G20ADDFOEMLABEL">Item Description</label>
-                                                <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
+                                                {/* <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
                                                     id="ItemDesc" name="ItemDesc" value={ItemDesc} onChange={(event) => setItemDesc(event.target.value)} autoComplete='off'>
                                                     <option >Select</option>
                                                     <option selected value="ItemDesc 1">ItemDesc 1</option>
                                                     <option value="ItemDesc 2">ItemDesc 2</option>
                                                     <option value="ItemDesc 3">ItemDesc 3</option>
-                                                </select>
+                                                </select> */}
+                                                <input type="text" autoComplete="off" id="ItemDesc" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value={ItemDesc} onChange={(event) => setItemDesc(event.target.value)} />
+
                                             </div>
                                             <div className="col">
                                                 <label htmlFor="ItemCode" className="col-form-label G20ADDFOEMLABEL">Item Code</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
                                                     id="ItemCode" name="ItemCode" value={ItemCode} onChange={(event) => setItemCode(event.target.value)} autoComplete='off'>
                                                     <option >Select</option>
-                                                    <option selected value="ItemCode 1">ItemCode 1</option>
-                                                    <option value="ItemCode 2">ItemCode 2</option>
-                                                    <option value="ItemCode 3">ItemCode 3</option>
+                                                    <option selected value="OPEXBAG0004">OPEXBAG0004</option>
+                                                    <option value="OPEXBAG0005">OPEXBAG0005</option>
                                                 </select>
+                                                {/* <input type="text" autoComplete="off" id="ItemCode" name="ItemCode" value={ItemCode} onChange={(event) => setItemCode(event.target.value)}  className="form-control G20ADDFOEMINPUTS1" aria-describedby=""  /> */}
+
                                             </div>
                                             <div className="col">
                                                 <label htmlFor="Category" className="col-form-label G20ADDFOEMLABEL">Category</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
                                                     id="Category" name="Category" value={Category} onChange={(event) => setCategory(event.target.value)} autoComplete='off'>
                                                     <option selected>Select</option>
-                                                    <option value="Category 1">Category 1</option>
-                                                    <option value="Category 2">Category 2</option>
-                                                    <option value="Category 3">Category 3</option>
+                                                    <option value="SUPPLIES OFFICE">SUPPLIES OFFICE</option>
+                                                    <option value="SUPPLIES FACILITY">SUPPLIES FACILITY</option>
                                                 </select>
                                             </div>
                                             <div className="col">
@@ -1013,9 +984,9 @@ export default function CreateIndent() {
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
                                                     id="UOM" name="UOM" value={UOM} onChange={(event) => setUOM(event.target.value)} autoComplete='off'>
                                                     <option >Select</option>
-                                                    <option selected value="UOM 1">UOM 1</option>
-                                                    <option value="UOM 2">UOM 2</option>
-                                                    <option value="UOM 3">UOM 3</option>
+                                                    <option selected value="Kg">Kg</option>
+                                                    <option value="Pcs">Pcs</option>
+                                                    <option value="Ltr">Ltr</option>
                                                 </select>
                                             </div>
                                             <div className="col">
@@ -1027,9 +998,8 @@ export default function CreateIndent() {
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example"
                                                     id="Price" name="Price" value={Price} onChange={(event) => setPrice(event.target.value)} autoComplete='off'>
                                                     <option >Select</option>
-                                                    <option selected value="Price 1">Price 1</option>
-                                                    <option value="Price 2">Price 2</option>
-                                                    <option value="Price 3">Price 3</option>
+                                                    <option selected value="33">33</option>
+                                                    <option value="5">5</option>
                                                 </select>
                                             </div>
                                             <div className="col">
@@ -1052,7 +1022,13 @@ export default function CreateIndent() {
                                             </div>
                                             <div className="col">
                                                 <label htmlFor="Function" className="col-form-label G20ADDFOEMLABEL">Function</label>
-                                                <input type="text" autoComplete="off" id="Function" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value={Function} onChange={(event) => setFunction(event.target.value)} />
+                                                {/* <input type="text" autoComplete="off" id="Function" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value={Function} onChange={(event) => setFunction(event.target.value)} /> */}
+                                                <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id="Function" value={Function} onChange={(event) => setFunction(event.target.value)}>
+                                                    <option selected>Select</option>
+                                                    <option value="HR">HR</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="SLP">SLP</option>
+                                                </select>
                                             </div>
                                             <div className="col"></div>
                                             <div className="col"></div>
@@ -1070,9 +1046,9 @@ export default function CreateIndent() {
                         <Modal.Header closeButton>
                             <Modal.Title>{selectedFile && selectedFile.name}</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body>
+                        <Modal.Body className='text-center'>
                             {selectedFile && selectedFile.type.startsWith('image/') ? (
-                                <img src={URL.createObjectURL(selectedFile)} alt={selectedFile.name} style={{ width: '80%', height: 'auto' }} />
+                                <img src={URL.createObjectURL(selectedFile)} alt={selectedFile.name} style={{ width: '100%', height: 'auto' }} />
                             ) : selectedFile && selectedFile.type === 'application/pdf' ? (
                                 <embed title={selectedFile.name} src={URL.createObjectURL(selectedFile)} style={{ width: '100%', height: '75vh' }} />
                             ) : (

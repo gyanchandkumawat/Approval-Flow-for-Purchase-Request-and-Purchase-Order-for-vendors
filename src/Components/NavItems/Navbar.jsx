@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 import '../../Assets/Css/Navbar.css'
 import Profile from '../../Assets/Images/download.svg'
-import ICONLOGO from '../../Assets/Images/main-logo.png'
-import BPAASlogo from '../../Assets/Images/bpaas.png'
 import { Link, NavLink } from 'react-router-dom'
-import EditNoteIcon from '@mui/icons-material/EditNote';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuIcon from '@mui/icons-material/Menu';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import AlignHorizontalLeftIcon from '@mui/icons-material/AlignHorizontalLeft';
 import DonutSmallIcon from '@mui/icons-material/DonutSmall';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 export default function Navbar(props) {
   const [navbar, setNavbar] = useState(false)
@@ -29,7 +25,7 @@ export default function Navbar(props) {
     <>
       <nav className={navbar ? "Navbar-main-scroll navbar navbar-expand-lg" : "navbar navbar-expand-lg Navbar-main "}>
         <div className="container">
-          <img src={BPAASlogo} className="navbar-brand" alt="" srcset="" style={{ width: "8%" }} />
+        <h2 className="navbar-brand">Logo</h2>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -221,6 +217,19 @@ export default function Navbar(props) {
                 </NavLink>
               </li>
 
+
+              <li className={
+                props.RFQCreateDeliveryschedule?"nav-item NAVACTIVECLASS":"d-none"}
+              >
+                <NavLink to={
+                  props.RFQCreateDeliveryschedule==="Create Delivery Schedule"?"/create-delivery-schedule":"#"}
+                className={isActiveNav ? "nav-link active NAV_LINK " : "nav-link NAV_LINK text-primary"}>
+                  {
+                    props.RFQCreateDeliveryschedule==="Create Delivery Schedule"?props.RFQCreateDeliveryschedule:""
+                  }
+                  <LaunchIcon  className='me-1 fs-6'style={{marginTop:"-2px"}}/>
+                </NavLink>
+              </li>
 
 
             </ul>

@@ -62,34 +62,35 @@ export default function PRForm() {
             id: 1,
             ItemCode: "OPEXBAG0004",
             ItemDesc: "Canvas Bag BIG 20x20x34 with double layered base. Weight approximately 250  15 grams along with eyelet attached and stitched with P.P. POLY POPLIN threads.",
-            Type: "",
-            Category: "",
-            Revision: "",
-            UOM: "No",
+            Type: "Goods",
+            Category: "SUPPLIES OFFICE",
+            Revision: "0",
+            UOM: "Pcs",
             Quantity: "10000",
             Price: "33",
-            NeedByDate: "",
+            NeedByDate: "31-08-2023",
             Delivertolocation: "DEH",
-            ChargeAccount: "",
-            NaturalAccount: "",
-            Function: "",
+            ChargeAccount: "0112345678 ",
+            NaturalAccount: "0112345678 ",
+            Function: "Admin",
         },
         {
             id: 2,
             ItemCode: "OPEXBAG0005",
             ItemDesc: "Big Tamper proof bag L- 480mm, W -395 mm,  3 Inch Round flap, 4 Inch gusset ,55 microns, twin sealing, sequential barcodes (2 places) , side series and POD Jacket) as per approved design",
-            Type: "",
-            Category: "",
-            Revision: "",
-            UOM: "No",
+            Type: "Goods",
+            Category: "SUPPLIES OFFICE",
+            Revision: "0",
+            UOM: "Pcs",
             Quantity: "10000",
             Price: "5",
-            NeedByDate: "",
+            NeedByDate: "31-08-2023",
             Delivertolocation: "INH",
-            ChargeAccount: "",
-            NaturalAccount: "",
-            Function: "",
+            ChargeAccount: "0112345678 ",
+            NaturalAccount: "0112345678 ",
+            Function: "Admin",
         },
+
 
     ]);
     // table items
@@ -280,7 +281,7 @@ const currentDatewithExpire = getCurrentDate();
                                                                 <td className=' text-center'>{item.Function}</td> */}
                                                             </tr>
                                                         ))) : (
-                                                        <td colspan="14" className="text-center AdminTABLELINEITEMdiv"><b>No Entry!</b> </td>
+                                                        <td colspan="11" className="text-center AdminTABLELINEITEMdiv"><b>No Entry!</b> </td>
                                                     )}
                                                 </tbody>
                                             </table>
@@ -347,7 +348,9 @@ const currentDatewithExpire = getCurrentDate();
                                                                     <td>{vendor.name}</td>
                                                                 </tr>
                                                             ))) : (
-                                                                    <td colspan="2" className="text-center AdminTABLELINEITEMdiv"><b>No Entry!</b>Please Select Vendors </td>
+                                                                <tr>
+                                                                    <td colspan="3" className="text-center AdminTABLELINEITEMdiv"><b>No Entry!</b>Please Select Vendors </td>
+                                                                </tr>
                                                         )
                                                         }
                                                     </tbody>

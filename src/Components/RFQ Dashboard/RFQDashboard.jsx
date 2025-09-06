@@ -350,6 +350,7 @@ export default function RFQDashboard() {
                 RFQPublished="Published RFQ"
                 RFQResponses="Responses RFQ"
                 RFQClosed="Closed RFQ"
+                RFQCreateDeliveryschedule = "Create Delivery Schedule"
             />
             <RFQModal RFQNO={RFQNO} RFQNOHandelColse={RFQNOHandelColse} />
             <div className="container-fluid">
@@ -450,7 +451,7 @@ export default function RFQDashboard() {
                                                             <h6 class="TIMEHEADER">Response RFQ</h6>
                                                             <p class="text-muted mb-0  TIMELINEDATE">13-05-2023</p>
                                                             <p class="TIMELINEREQUESTNO mb-0">RFQ-00000000001-BPAAS </p>
-                                                            <p class="text-muted TIMELINEDATE"><b></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                                                            {/* <p class="text-muted TIMELINEDATE"><b></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p> */}
                                                         </li>
 
                                                         <li class="timeline-item mb-2">
@@ -464,13 +465,13 @@ export default function RFQDashboard() {
                                                             <h6 class="TIMEHEADER">Closed</h6>
                                                             <p class="text-muted mb-0  TIMELINEDATE">18-05-2023</p>
                                                             <p class="TIMELINEREQUESTNO mb-0">RFQ-00000000004-BPAAS </p>
-                                                            <p class="text-muted TIMELINEDATE"><b></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                                                            {/* <p class="text-muted TIMELINEDATE"><b></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p> */}
                                                         </li>
                                                         <li class="timeline-item mb-2">
                                                             <h6 class="TIMEHEADER">Closed</h6>
                                                             <p class="text-muted mb-0 TIMELINEDATE">10-05-2023</p>
                                                             <p class="TIMELINEREQUESTNO mb-0">RFQ-00000000005-BPAAS </p>
-                                                            <p class="text-muted TIMELINEDATE"><b></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                                                            {/* <p class="text-muted TIMELINEDATE"><b></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p> */}
                                                         </li>
                                                     </ul>
                                                 </section>

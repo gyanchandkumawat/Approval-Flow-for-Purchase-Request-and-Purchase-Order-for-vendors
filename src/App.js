@@ -52,6 +52,8 @@ import AcknowledgeSubmit from './Components/Vendor/AcknowledgeSubmit';
 import MyPO from './Components/RFQ Create/MyPO';
 import VendorPO from './Components/Vendor/VendorPO';
 import VendorPoFOrm from './Components/Vendor/VendorPOFOrm';
+import CreateDeliverySch from './Components/Create Delivery Schedule/CreateDeliverySch';
+import DeliveryScheduleData from './Components/Create Delivery Schedule/DeliveryScheduleData';
 
 function App() {
   return (
@@ -123,6 +125,10 @@ function App() {
           <Route path='/acknowledgesubmit' element={<AcknowledgeSubmit/>}/>
           <Route path='/vendorpo' element={<VendorPO/>}/>
           <Route path='/vendorpoform' element={<VendorPoFOrm/>}/>
+
+          {/* Create Delivery Schedule */}
+          <Route path='/create-delivery-schedule' element={<CreateDeliverySch/>}/>
+          <Route path='/delivery-schedule-data' element={<DeliveryScheduleData/>}/>
         </Routes>
     </BrowserRouter>
     </>

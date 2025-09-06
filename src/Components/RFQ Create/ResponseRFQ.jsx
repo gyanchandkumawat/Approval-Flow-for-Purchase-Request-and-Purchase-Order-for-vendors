@@ -21,40 +21,53 @@ export default function ResponseRFQForm() {
         navigate("/rfqdashboard", { replace: true });
     }
 
+    const CloseRFQHandle = (event) => {
+        event.preventDefault();
+        iziToast.success({
+            title: 'RFQ',
+            message: 'Closed Successfully',
+            position: 'topRight'
+        });
+        navigate("/allrfq", { replace: true });
+    }
+
+
+
     // table items
     const [items, setItems] = useState([
         {
             id: 1,
             ItemCode: "OPEXBAG0004",
             ItemDesc: "Canvas Bag BIG 20x20x34 with double layered base. Weight approximately 250  15 grams along with eyelet attached and stitched with P.P. POLY POPLIN threads.",
-            Type: "",
-            Category: "",
-            Revision: "",
-            UOM: "No",
+            Type: "Goods",
+            Category: "SUPPLIES OFFICE",
+            Revision: "0",
+            UOM: "Pcs",
             Quantity: "10000",
             Price: "33",
-            NeedByDate: "",
+            NeedByDate: "31-08-2023",
             Delivertolocation: "DEH",
-            ChargeAccount: "",
-            NaturalAccount: "",
-            Function: "",
+            ChargeAccount: "0112345678 ",
+            NaturalAccount: "0112345678 ",
+            Function: "Admin",
         },
         {
             id: 2,
             ItemCode: "OPEXBAG0005",
             ItemDesc: "Big Tamper proof bag L- 480mm, W -395 mm,  3 Inch Round flap, 4 Inch gusset ,55 microns, twin sealing, sequential barcodes (2 places) , side series and POD Jacket) as per approved design",
-            Type: "",
-            Category: "",
-            Revision: "",
-            UOM: "No",
+            Type: "Goods",
+            Category: "SUPPLIES OFFICE",
+            Revision: "0",
+            UOM: "Pcs",
             Quantity: "10000",
             Price: "5",
-            NeedByDate: "",
+            NeedByDate: "31-08-2023",
             Delivertolocation: "INH",
-            ChargeAccount: "",
-            NaturalAccount: "",
-            Function: "",
+            ChargeAccount: "0112345678 ",
+            NaturalAccount: "0112345678 ",
+            Function: "Admin",
         },
+
 
     ]);
     // table items
@@ -102,6 +115,9 @@ export default function ResponseRFQForm() {
                                             {/* <VerifiedIcon className='text-success fs-5'/> */}
                                             <div className="FORMBTNSMAIN">
                                                 <button type='submit' className='PUBLISH '>Re-Publish</button>
+                                                &nbsp;
+                                                <button type='button' onClick={CloseRFQHandle} className='APPROVEDBTN'>Close RFQ</button>
+                                                &nbsp;
                                             </div>
                                         </h6>
                                         <hr className='mt-0 mb-1' />

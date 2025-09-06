@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
 import '../../Assets/Css/Navbar.css'
 import Profile from '../../Assets/Images/download.svg'
-import ICONLOGO from '../../Assets/Images/main-logo.png'
-import BPAASlogo from '../../Assets/Images/bpaas.png'
 import { Link, NavLink } from 'react-router-dom'
-import EditNoteIcon from '@mui/icons-material/EditNote';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuIcon from '@mui/icons-material/Menu';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import AlignHorizontalLeftIcon from '@mui/icons-material/AlignHorizontalLeft';
-import DonutSmallIcon from '@mui/icons-material/DonutSmall';
 import InventoryIcon from '@mui/icons-material/Inventory';
 
 export default function VendorNavbar() {
@@ -30,7 +24,6 @@ export default function VendorNavbar() {
     <>
       <nav className={navbar ? "Navbar-main-scroll navbar navbar-expand-lg" : "navbar navbar-expand-lg Navbar-main "}>
         <div className="container">
-          <img src={BPAASlogo} className="navbar-brand" alt="" srcset="" style={{ width: "8%" }} />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

@@ -477,7 +477,7 @@ export default function APPDashboardIndent() {
                           <h6 class="fw-bold">Query Raised</h6>
                           <p class="text-muted mb-0 fw-bold TIMELINEDATE">Date : 13-05-2023</p>
                           <p class="TIMELINEREQUESTNO mb-0">Request No. : PR-00000000002-BPAAS </p>
-                          <p class="text-muted TIMELINEDATE"><b>Remarks :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                          {/* <p class="text-muted TIMELINEDATE"><b>Remarks :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p> */}
                         </li>
 
                         <li class="timeline-item mb-2">
@@ -491,13 +491,13 @@ export default function APPDashboardIndent() {
                           <h6 class="fw-bold">Approved</h6>
                           <p class="text-muted mb-0 fw-bold TIMELINEDATE">Date : 18-05-2023</p>
                           <p class="TIMELINEREQUESTNO mb-0">Request No. : PR-00000000004-BPAAS </p>
-                          <p class="text-muted TIMELINEDATE"><b>Remarks :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                          {/* <p class="text-muted TIMELINEDATE"><b>Remarks :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p> */}
                         </li>
                         <li class="timeline-item mb-2">
                           <h6 class="fw-bold">Rejected</h6>
                           <p class="text-muted mb-0 fw-bold TIMELINEDATE">Date : 10-05-2023</p>
                           <p class="TIMELINEREQUESTNO mb-0">Request No. : PR-00000000005-BPAAS </p>
-                          <p class="text-muted TIMELINEDATE"><b>Remarks :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                          {/* <p class="text-muted TIMELINEDATE"><b>Remarks :</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p> */}
                         </li>
                       </ul>
                     </section>

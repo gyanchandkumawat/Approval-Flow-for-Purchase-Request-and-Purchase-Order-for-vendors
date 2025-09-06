@@ -8,6 +8,25 @@ In the project directory, you can run:
 
 ### `npm start`
 
+### Login CR.
+
+For Main Dashboard : 
+username - sanjay.kumar 
+password - sanjay.kumar
+
+For Approver Dashboard :           
+username - rajesh.kumar
+password - rajesh.kumar
+
+For Request for Quotation Dashboard : 
+username - RFQ.user
+password - RFQ.user"
+
+For Vendor Dashboard : 
+username - vendor
+password - vendor
+
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

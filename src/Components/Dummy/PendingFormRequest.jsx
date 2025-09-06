@@ -46,35 +46,34 @@ export default function PendingFormRequest() {
             id: 1,
             ItemCode: "OPEXBAG0004",
             ItemDesc: "Canvas Bag BIG 20x20x34 with double layered base. Weight approximately 250  15 grams along with eyelet attached and stitched with P.P. POLY POPLIN threads.",
-            Type: "",
-            Category: "",
-            Revision: "",
-            UOM: "No",
+            Type: "Goods",
+            Category: "SUPPLIES OFFICE",
+            Revision: "0",
+            UOM: "Pcs",
             Quantity: "10000",
             Price: "33",
-            NeedByDate: "",
+            NeedByDate: "31-08-2023",
             Delivertolocation: "DEH",
-            ChargeAccount: "",
-            NaturalAccount: "",
-            Function: "",
+            ChargeAccount: "0112345678 ",
+            NaturalAccount: "0112345678 ",
+            Function: "Admin",
         },
         {
             id: 2,
             ItemCode: "OPEXBAG0005",
             ItemDesc: "Big Tamper proof bag L- 480mm, W -395 mm,  3 Inch Round flap, 4 Inch gusset ,55 microns, twin sealing, sequential barcodes (2 places) , side series and POD Jacket) as per approved design",
-            Type: "",
-            Category: "",
-            Revision: "",
-            UOM: "No",
+            Type: "Goods",
+            Category: "SUPPLIES OFFICE",
+            Revision: "0",
+            UOM: "Pcs",
             Quantity: "10000",
             Price: "5",
-            NeedByDate: "",
+            NeedByDate: "31-08-2023",
             Delivertolocation: "INH",
-            ChargeAccount: "",
-            NaturalAccount: "",
-            Function: "",
+            ChargeAccount: "0112345678 ",
+            NaturalAccount: "0112345678 ",
+            Function: "Admin",
         },
-
     ]);
     const [Type, setType] = useState("");
     const [ItemDesc, setItemDesc] = useState("");
@@ -552,7 +551,7 @@ export default function PendingFormRequest() {
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Type" className="col-form-label G20ADDFOEMLABEL">Type</label>
-                                                <input type="text" autoComplete="off" id="Type" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="Type" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="Goods" disabled />
                                             </div>
                                             {/* <div className="col-md-2">
                                                 <label htmlFor="Preparer" className="col-form-label G20ADDFOEMLABEL">Preparer</label>
@@ -560,7 +559,7 @@ export default function PendingFormRequest() {
                                             </div> */}
                                             <div className="col-md-2">
                                                 <label htmlFor="Total" className="col-form-label G20ADDFOEMLABEL">Total</label>
-                                                <input type="text" autoComplete="off" id="Total" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="Total" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="83000" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="BusinessLine" className="col-form-label G20ADDFOEMLABEL">Business Line</label>
@@ -587,27 +586,27 @@ export default function PendingFormRequest() {
                                             <div className="col-md-2">
                                                 <label htmlFor="Function" className="col-form-label G20ADDFOEMLABEL">Function</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id="Function" disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Function 1">Function 1</option>
-                                                    <option value="Function 2">Function 2</option>
-                                                    <option value="Function 3">Function 3</option>
+                                                <option>Select</option>
+                                                    <option value="Admin" selected>Admin</option>
+                                                    <option value="HR">HR</option>
+                                                    <option value="SLP">SLP</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="ShipToOrg" className="col-form-label G20ADDFOEMLABEL">Ship To Org</label>
-                                                <input type="text" autoComplete="off" id="ShipToOrg" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="ShipToOrg" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="BPAAS" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="BillTo" className="col-form-label G20ADDFOEMLABEL">Bill To</label>
-                                                <input type="text" autoComplete="off" id="BillTo" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="BillTo" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="BPAAS" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Currency" className="col-form-label G20ADDFOEMLABEL">Currency</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id="Currency" disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Currency 1">Currency 1</option>
-                                                    <option value="Currency 2">Currency 2</option>
-                                                    <option value="Currency 3">Currency 3</option>
+                                                <option >Select</option>
+                                                    <option value="INR"selected>INR</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="EUR">EUR</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
@@ -703,23 +702,20 @@ export default function PendingFormRequest() {
                                             <div className="col-md-2">
                                                 <label htmlFor="Destination" className="col-form-label G20ADDFOEMLABEL">Destination type <span className='text-danger'>*</span></label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Destination' required disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Destination type 1">Destination type 1</option>
-                                                    <option value="Destination type 2">Destination type 2</option>
-                                                    <option value="Destination type 3">Destination type 3</option>
+                                                <option>Select</option>
+                                                    <option value="Inventory" selected>Inventory</option>
+                                                    <option value="Corporate Office">Corporate Office</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Requester" className="col-form-label G20ADDFOEMLABEL">Requester <span className='text-danger'>*</span></label>
-                                                <input type="text" autoComplete="off" id="Requester" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" required disabled />
+                                                <input type="text" autoComplete="off" id="Requester" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="sanjay.kumar" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Organization" className="col-form-label G20ADDFOEMLABEL">Organization <span className='text-danger'>*</span></label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Organization' required disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Organization type 1">Organization type 1</option>
-                                                    <option value="Organization type 2">Organization type 2</option>
-                                                    <option value="Organization type 3">Organization type 3</option>
+                                                <option >Select</option>
+                                                    <option value="BPAAS"selected>BPAAS</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">

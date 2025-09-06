@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../../Assets/Css/Login.css'
-import ecomImg from '../../Assets/Images/loginside.png'
-import ecomLogo from '../../Assets/Images/main-logo.png'
-import BPAASlogo from '../../Assets/Images/bpaas.png'
-import BPAASIMG from '../../Assets/Images/approvals.svg'
 import { useNavigate } from 'react-router-dom'
 import iziToast from 'izitoast'
 
@@ -152,7 +148,7 @@ export default function Login() {
                     <div className="row LoginMAINROW g-1">
                         <div className="col text-center">
                             {/* <div> */}
-                                <img src={BPAASIMG} alt="" className=' mb-2 SideImage' />
+                                <h2 className=' mb-2 SideImage'>Logo</h2>
                                 <h4 className='SideTextHeader'>E-Procurement System</h4>
                                 <h6 className='Sidetextp'>
                                 BPAAS Proqure provides automation of RFQ Generation/Approval, RFQ/RFP release to multiple vendors, capture Vendor Responses, Comparative Analysis of Quotes, Purchase Order Generation, and Purchase Requisition. It delivers open APIs for integration with back-end ERP systems                                
@@ -164,7 +160,7 @@ export default function Login() {
                                 <div className="card-body">
                                     <form className='p-3 ' onSubmit={handleCaptchaSubmit}>
                                         <div className="mb-3 text-center">
-                                            <img src={BPAASlogo} alt="" className='ECOMLOGO' />
+                                           {/* <img src={BPAASlogo} alt="" className='ECOMLOGO' /> */}
                                         </div>
                                         <div class="mb-3">
                                             <label for="UserName" class="form-label FormLabel">Email address</label>

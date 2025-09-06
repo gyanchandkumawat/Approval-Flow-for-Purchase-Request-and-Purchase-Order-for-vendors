@@ -45,7 +45,7 @@ export default function APPQueryRaisedRequest() {
             id: 1,
             ItemCode: "10321",
             ItemDesc: "Laptop | 16 RAM | 1TB Hard Disk",
-            Type: "MacBook",
+            Type: "Goods",
             Category: "0–9 2-in-1 PC",
             Revision: "1",
             UOM: "pieces",
@@ -537,7 +537,7 @@ export default function APPQueryRaisedRequest() {
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Type" className="col-form-label G20ADDFOEMLABEL">Type</label>
-                                                <input type="text" autoComplete="off" id="Type" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="MacBook" disabled />
+                                                <input type="text" autoComplete="off" id="Type" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="Goods" disabled />
                                             </div>
                                             {/* <div className="col-md-2">
                                                 <label htmlFor="Preparer" className="col-form-label G20ADDFOEMLABEL">Preparer</label>
@@ -545,7 +545,7 @@ export default function APPQueryRaisedRequest() {
                                             </div> */}
                                             <div className="col-md-2">
                                                 <label htmlFor="Total" className="col-form-label G20ADDFOEMLABEL">Total</label>
-                                                <input type="text" autoComplete="off" id="Total" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="Total" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="83000" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="BusinessLine" className="col-form-label G20ADDFOEMLABEL">Business Line</label>
@@ -583,19 +583,19 @@ export default function APPQueryRaisedRequest() {
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="ShipToOrg" className="col-form-label G20ADDFOEMLABEL">Ship To Org</label>
-                                                <input type="text" autoComplete="off" id="ShipToOrg" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="ShipToOrg" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="BPAAS" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="BillTo" className="col-form-label G20ADDFOEMLABEL">Bill To</label>
-                                                <input type="text" autoComplete="off" id="BillTo" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="" disabled />
+                                                <input type="text" autoComplete="off" id="BillTo" className="form-control G20ADDFOEMINPUTS1" aria-describedby="" value="BPAAS" disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Currency" className="col-form-label G20ADDFOEMLABEL">Currency</label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id="Currency" disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Currency 1">Currency 1</option>
-                                                    <option value="Currency 2">Currency 2</option>
-                                                    <option value="Currency 3">Currency 3</option>
+                                                <option >Select</option>
+                                                    <option value="INR"selected>INR</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="EUR">EUR</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
@@ -691,23 +691,20 @@ export default function APPQueryRaisedRequest() {
                                             <div className="col-md-2">
                                                 <label htmlFor="Destination" className="col-form-label G20ADDFOEMLABEL">Destination type <span className='text-danger'>*</span></label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Destination'  disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Destination type 1">Destination type 1</option>
-                                                    <option value="Destination type 2">Destination type 2</option>
-                                                    <option value="Destination type 3">Destination type 3</option>
+                                                <option>Select</option>
+                                                    <option value="Inventory" selected>Inventory</option>
+                                                    <option value="Corporate Office">Corporate Office</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Requester" className="col-form-label G20ADDFOEMLABEL">Requester <span className='text-danger'>*</span></label>
-                                                <input type="text" autoComplete="off" id="Requester" className="form-control G20ADDFOEMINPUTS1" aria-describedby=""  disabled />
+                                                <input type="text" autoComplete="off" id="Requester" className="form-control G20ADDFOEMINPUTS1" aria-describedby=""value="sanjay.kumar"  disabled />
                                             </div>
                                             <div className="col-md-2">
                                                 <label htmlFor="Organization" className="col-form-label G20ADDFOEMLABEL">Organization <span className='text-danger'>*</span></label>
                                                 <select className="form-select G20ADDFOEMINPUTS1SELECT" aria-label="Default select example" id='Organization'  disabled>
-                                                    <option selected>Select</option>
-                                                    <option value="Organization type 1">Organization type 1</option>
-                                                    <option value="Organization type 2">Organization type 2</option>
-                                                    <option value="Organization type 3">Organization type 3</option>
+                                                <option >Select</option>
+                                                    <option value="BPAAS"selected>BPAAS</option>
                                                 </select>
                                             </div>
                                             <div className="col-md-2">

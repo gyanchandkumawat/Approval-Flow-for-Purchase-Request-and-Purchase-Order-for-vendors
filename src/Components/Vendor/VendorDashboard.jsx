@@ -250,7 +250,9 @@ function VendorDashboard() {
                                                         </div>
                                                     </div>
                                                     <p class="mb-0  ActivitiesDate">13-05-2023</p>
-                                                    <p class="ActivitiesRemarks"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                                                    <p class="ActivitiesRemarks"> 
+                                                    Request Received from RFQ Team                                                    
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div className="card mt-2 activites border-0">
@@ -264,7 +266,9 @@ function VendorDashboard() {
                                                         </div>
                                                     </div>
                                                     <p class="mb-0  ActivitiesDate">13-05-2023</p>
-                                                    <p class="ActivitiesRemarks"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                                                    <p class="ActivitiesRemarks"> 
+                                                    Request Acknowledged                                                    
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div className="card mt-2 activites border-0">
@@ -278,7 +282,41 @@ function VendorDashboard() {
                                                         </div>
                                                     </div>
                                                     <p class="mb-0  ActivitiesDate">13-05-2023</p>
-                                                    <p class="ActivitiesRemarks"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati, quia sapiente asperiores ipsum magnam. Officiis veniam amet assumenda ipsa!</p>
+                                                    <p class="ActivitiesRemarks"> 
+                                                    Request Submitted                                                    
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="card mt-2 activites border-0">
+                                                <div className="card-body p-2">
+                                                    <div className="row">
+                                                        <div className="col">
+                                                            <h6 className='ActivitiesContent'>RFQ-00000000005-BPAAS</h6>
+                                                        </div>
+                                                        <div className="col-md-2">
+                                                            <UpdateIcon className='text-warning fs-4 m-auto' />
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0  ActivitiesDate">13-05-2023</p>
+                                                    <p class="ActivitiesRemarks"> 
+                                                    Request Received from RFQ Team                                                    
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="card mt-2 activites border-0">
+                                                <div className="card-body p-2">
+                                                    <div className="row">
+                                                        <div className="col">
+                                                            <h6 className='ActivitiesContent'>RFQ-00000000006-BPAAS</h6>
+                                                        </div>
+                                                        <div className="col-md-2">
+                                                        <CheckCircleOutlineIcon className='text-success fs-4 m-auto' />
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0  ActivitiesDate">13-05-2023</p>
+                                                    <p class="ActivitiesRemarks"> 
+                                                    Request Acknowledged                                                    
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
